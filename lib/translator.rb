@@ -8,6 +8,10 @@ def load_library(path)
   emoteHash[":get_emoticon"] = {}
   
   emotes.each do |english, emoji| 
+    emoteHash["get_emoticon"][emoji.first] = emoji.last
+    emoteHash["get_meaning"][emoji.last] = emoji.first
+  end
+  emoteHash
 end
 
 
