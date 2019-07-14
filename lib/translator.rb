@@ -4,10 +4,11 @@ require 'yaml'
 def load_library(path)
   emotes = YAML.load_file(path)
   emoteHash = Hash.new
+
+  emoteHash["get_emoticon"] = Hash.new
   emoteHash["get_meaning"] = Hash.new
-  emoteHash[":get_emoticon"] = Hash.new
-  
-  emotes.each do |english, emoji| 
+
+  emotes.each do |english, emoji|
     emoteHash["get_emoticon"][emoji.first] = emoji.last
     emoteHash["get_meaning"][emoji.last] = english
   end
