@@ -1,6 +1,6 @@
 # require modules here
 require 'yaml'
-#start
+=begin
 def load_library(path)
   emotes = YAML.load_file(path)
   emoteHash = {}
@@ -13,7 +13,7 @@ def load_library(path)
   end
   emoteHash
 end
-#end
+=end
 def load_library(path)
   emotes = YAML.load_file(path)
   emoteHash = Hash.new
