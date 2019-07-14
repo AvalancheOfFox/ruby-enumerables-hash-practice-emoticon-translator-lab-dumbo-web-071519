@@ -6,7 +6,19 @@ def load_library(path)
   emoteHash = {}
   emoteHash["get_meaning"] = {}
   emoteHash[":get_emoticon"] = {}
+  
+  emotes.each do || 
 end
+
+
+
+
+
+
+
+
+
+
 
 def get_japanese_emoticon
   # code goes here
