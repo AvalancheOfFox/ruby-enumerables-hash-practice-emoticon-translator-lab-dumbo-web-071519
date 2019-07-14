@@ -2,7 +2,7 @@
 require 'yaml'
 
 def load_library(path)
-  emotes = YAML.load_path(path)
+  emotes = YAML.load_file(path)
   
 end
 
